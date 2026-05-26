@@ -13,7 +13,8 @@ export default function RootLayout(props: { children: ReactNode}) {
       lang="en"
     >
       <body>
-        {props: children}
+        {props.children}
+        Hi
       </body>
     </html>
   );
