@@ -14,7 +14,7 @@ export default function RootLayout(props: { children: ReactNode}) {
     >
       <body>
         {props.children}
-        Hi
+        Hiiiiiiii
       </body>
     </html>
   );

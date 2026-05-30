@@ -1,4 +1,4 @@
-1. Create a basic react/nextJs application
+1. Create a basic react/nextJs application 
 2. Connect our wallet with a nicer connect application
 3. Implement this functions
 function sirdropERC20(
