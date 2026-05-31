@@ -13,7 +13,7 @@ export default function RootLayout(props: { children: ReactNode}) {
       <body>
         <Providers>
         {props.children}
-        Hiiiiiiii
+        {/* Hiiiiiiii */}
         </Providers>
       </body>
     </html>

@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import { FaGithub } from "react-icons/fa"
+import image from "next/image"
 
 export default function Header() {
   return (
     <header className="flex items-center justify-between px-6 py-4 border-b">
       <div className="flex items-center gap-3">
         <Link
-          href="https://github.com/your-github-username"
+          href="https://github.com/Sharon-dev-create"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2"

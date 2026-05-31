@@ -1,10 +1,13 @@
-import Image from "next/image";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Header from "../components/Header";
 
 export default function Home() {
-  return ( 
-    <div>
-      <ConnectButton />
-      </div>
+  return (
+    <>
+      <Header />
+
+      <main className="p-6">
+        <h1>Welcome to TSender</h1>
+      </main>
+    </>
   );
 }
