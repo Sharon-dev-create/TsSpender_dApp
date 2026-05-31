@@ -1,13 +1,9 @@
-import Header from "../components/Header";
+import AirdropForm from "../components/AirdropForm";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-
-      <main className="p-6">
-        <h1>Welcome to TSender</h1>
-      </main>
-    </>
+    <div>
+      <AirdropForm/>
+      </div>
   );
 }
