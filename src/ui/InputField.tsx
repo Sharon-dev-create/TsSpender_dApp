@@ -18,16 +18,27 @@ export default function InputField({
     onChange,
 }: InputFieldProps) {
     return (
-        <div className={`form-group ${large ? 'form-group-lg' : ''}`}>
-            <label htmlFor={label}>{label}</label>
-            <input
-                type={type}
-                id={label}
-                placeholder={placeholder}
-                value={value}
-                onChange={onChange}
-                className="form-control"
-            />
+        <div className="flex flex-col gap-2">
+            <label className="font-medium">{label}</label>
+
+            {large ? (
+                <textarea
+                    placeholder={placeholder}
+                    value={value}
+                    onChange={onChange}
+                    rows={5}
+                    className="border rounded-lg p-3 resize-none"
+                    />
+            ) : (
+                <input 
+                  type={type}
+                  placeholder={placeholder}
+                  value= {value}
+                  onChange={onChange}
+                  className="border rounded-lg p-3"
+                  />
+            )}
         </div>
     );
+
 }
