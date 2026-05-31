@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ReactNode } from "React"
+import { ReactNode } from "react"
 import { Providers } from "./providers"
 
 export const metadata: Metadata = {
@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props: { children: ReactNode}) {
   return (
-    <html
-      lang="en"
-    >
+    <html lang="en">
       <body>
+        <Providers>
         {props.children}
         Hiiiiiiii
+        </Providers>
       </body>
     </html>
   );
