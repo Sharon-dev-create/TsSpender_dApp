@@ -34,8 +34,7 @@ export default function Header() {
           <span className="text-xl font-bold">TSender</span>
         </Link>
       </div>
-
-      <ConnectButton />
+       < ConnectButton/>
     </header>
   );
 }
