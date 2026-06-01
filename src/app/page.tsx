@@ -13,13 +13,6 @@ export default function Page() {
     <div>
       <Header />
       <AirdropForm /> 
-      <InputField
-      label="Messageee fuuucckk"
-        placeholder="Enter your message..."
-        value={message}
-        large
-        onChange={(e) => setMessage(e.target.value)}
-     /> 
       </div>
   );
 }
