@@ -13,7 +13,9 @@
         // b. If already approved move to step two IF NOT APPROVED, APPROVE FIRST THEN MOVE TO STEP TWO
         // 1. Approve our tsender contract to send the tokens
         // 2. Call the tsender contract to send the <tokens></tokens>
-        const tSenderAddress =     
+        const tSenderAddress = chainToTSender[chainId ]
+        console.log("chainsToTSender", tSenderAddress);
+        console.log(chainId);  
     }
 
     return (
