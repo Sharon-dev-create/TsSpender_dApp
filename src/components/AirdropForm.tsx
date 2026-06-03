@@ -66,11 +66,11 @@ export default function AirdropForm() {
         onChange={(e) => setAmount(e.target.value)}
       />
       <button
-  onClick={handleSubmit}
-  className="px-8 py-3 rounded-xl bg-blue-600 text-white font-semibold tracking-wide shadow-lg transition-all duration-300 hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-xl active:translate-y-0 active:scale-95"
->
-  Send Tokens
-</button>
+        onClick={handleSubmit}
+        className="mt-4 px-8 py-3 rounded-xl bg-blue-600 text-white font-semibold tracking-wide shadow-lg transition-all duration-300 hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-xl active:translate-y-0 active:scale-95"
+      >
+        Send Tokens
+      </button>
     </div>
   );
 }
