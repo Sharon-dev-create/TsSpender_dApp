@@ -33,10 +33,11 @@ import { Account } from "viem/tempo";
     async function handleSubmit() {
         // b. If already approved move to step two IF NOT APPROVED, APPROVE FIRST THEN MOVE TO STEP TWO
         // 1. Approve our tsender contract to send the tokens
-        // 2. Call the tsender contract to send the <tokens></tokens>
+        // 2. Call the airdrop function on thetsender contract 
+        // 3. Wait for the transaction to be confirmed
         const tSenderAddress = chainsToTSender[chainId ]["tsender"]
-        console.log("chainsToTSender", tSenderAddress);
-        console.log(chainId);  
+        const approvedAmount = await getApprovedAmount(tSenderAddress)
+        console.log(approvedAmount)
     }
 
     return (
