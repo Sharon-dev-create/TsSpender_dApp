@@ -1,11 +1,20 @@
 "use client"
 
-import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { getDefaultConfig } from "@rainbow-me/rainbowkit";
 import { anvil, zksync } from "wagmi/chains";
 
-export default getDefaultConfig({
-    appName: "Tsender",
-    projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
-    chains: [anvil, zksync],
-    ssr: false
-})
+export const chains = [anvil, zksync] as const;
+
+const walletConnectProjectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
+if (!walletConnectProjectId) {
+  throw new Error("Missing NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID in environment");
+}
+
+export const config = getDefaultConfig({
+  appName: "Tsender",
+  projectId: walletConnectProjectId,
+  chains,
+  ssr: false,
+});
+
+export default config;
